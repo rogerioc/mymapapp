@@ -1,4 +1,4 @@
-package com.rogerio.mymappapp.services.models
+package com.rogerio.mymapapp.services.models
 
 import com.squareup.moshi.Json
 

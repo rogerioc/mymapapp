@@ -1,4 +1,4 @@
-package com.rogerio.mymappapp.services
+package com.rogerio.mymapapp.services
 
 import com.squareup.moshi.Moshi
 import io.reactivex.schedulers.Schedulers

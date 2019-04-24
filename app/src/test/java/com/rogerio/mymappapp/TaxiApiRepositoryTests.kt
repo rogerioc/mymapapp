@@ -2,9 +2,9 @@ package com.rogerio.mymappapp
 
 import com.nhaarman.mockitokotlin2.verify
 import com.rogerio.mymappapp.helpers.RxImmediateSchedulerRule
-import com.rogerio.mymappapp.services.ITaxiApi
-import com.rogerio.mymappapp.services.TaxiApi
-import com.rogerio.mymappapp.services.repository.TaxisApiRepository
+import com.rogerio.mymapapp.services.ITaxiApi
+import com.rogerio.mymapapp.services.TaxiApi
+import com.rogerio.mymapapp.services.repository.TaxisApiRepository
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

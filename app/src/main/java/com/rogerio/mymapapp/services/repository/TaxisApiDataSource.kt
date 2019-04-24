@@ -1,6 +1,6 @@
-package com.rogerio.mymappapp.services.repository
+package com.rogerio.mymapapp.services.repository
 
-import com.rogerio.mymappapp.services.models.PoiList
+import com.rogerio.mymapapp.services.models.PoiList
 import io.reactivex.Single
 
 interface TaxisApiDataSource {

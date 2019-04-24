@@ -1,7 +1,7 @@
-package com.rogerio.mymappapp
+package com.rogerio.mymapapp
 
 import androidx.multidex.MultiDexApplication
-import com.rogerio.mymappapp.di.myMappModule
+import com.rogerio.mymapapp.di.myMappModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

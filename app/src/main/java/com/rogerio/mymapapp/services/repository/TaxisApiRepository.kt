@@ -1,6 +1,6 @@
-package com.rogerio.mymappapp.services.repository
+package com.rogerio.mymapapp.services.repository
 
-import com.rogerio.mymappapp.services.ITaxiApi
+import com.rogerio.mymapapp.services.ITaxiApi
 
 class TaxisApiRepository(
     private val service: ITaxiApi

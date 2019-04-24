@@ -1,11 +1,11 @@
-package com.rogerio.mymappapp.di
+package com.rogerio.mymapapp.di
 
-import com.rogerio.mymappapp.BuildConfig
-import com.rogerio.mymappapp.presentation.MapsViewModel
-import com.rogerio.mymappapp.presentation.MyTaxisInteractor
-import com.rogerio.mymappapp.services.TaxiApi.createService
-import com.rogerio.mymappapp.services.repository.TaxisApiDataSource
-import com.rogerio.mymappapp.services.repository.TaxisApiRepository
+import com.rogerio.mymapapp.BuildConfig
+import com.rogerio.mymapapp.presentation.MapsViewModel
+import com.rogerio.mymapapp.presentation.MyTaxisInteractor
+import com.rogerio.mymapapp.services.TaxiApi.createService
+import com.rogerio.mymapapp.services.repository.TaxisApiDataSource
+import com.rogerio.mymapapp.services.repository.TaxisApiRepository
 import com.squareup.moshi.Moshi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
