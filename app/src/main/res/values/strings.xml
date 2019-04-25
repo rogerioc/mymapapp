@@ -1,3 +1,5 @@
 <resources>
     <string name="title_activity_maps">Map</string>
+    <string name="text_taxi">Taxi</string>
+    <string name="text_close_vehicles">Close Vehicles</string>
 </resources>

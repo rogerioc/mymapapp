@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="viewModel" type="com.rogerio.mymapapp.vehiclesList.presentation.list.VehicleViewModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <TextView
+                style="@style/MyTextStyle"
+                android:gravity="center"
+                android:id="@+id/text_car_type"
+                android:text="@{viewModel.model.fleetType}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/text_taxi"
+                app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

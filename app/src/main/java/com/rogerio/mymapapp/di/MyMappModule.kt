@@ -6,6 +6,7 @@ import com.rogerio.mymapapp.presentation.MyTaxisInteractor
 import com.rogerio.mymapapp.services.TaxiApi.createService
 import com.rogerio.mymapapp.services.repository.TaxisApiDataSource
 import com.rogerio.mymapapp.services.repository.TaxisApiRepository
+import com.rogerio.mymapapp.vehiclesList.presentation.VehiclesViewModel
 import com.squareup.moshi.Moshi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -51,6 +52,10 @@ val myMappModule = module {
 
     factory {
         MapsViewModel(get())
+    }
+
+    factory {
+        VehiclesViewModel(get())
     }
 }
 
