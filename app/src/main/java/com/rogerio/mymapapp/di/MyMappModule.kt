@@ -51,7 +51,7 @@ val myMappModule = module {
     }
 
     factory {
-        MapsViewModel(get())
+        MapsViewModel()
     }
 
     factory {

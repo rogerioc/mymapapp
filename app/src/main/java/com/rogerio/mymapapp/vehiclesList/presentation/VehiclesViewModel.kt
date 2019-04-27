@@ -16,9 +16,6 @@ class VehiclesViewModel(
 ) : BaseViewModel() {
 
     val showLoading = ObservableInt(View.GONE)
-    private val _closeCars = MutableLiveData<List<VehiclePositionViewEntity>>()
-    val closesCars: LiveData<List<VehiclePositionViewEntity>>
-        get() = _closeCars
     private val _selectedVehicle = MutableLiveData<VehiclePositionViewEntity>()
     val selectedVehicle: LiveData<VehiclePositionViewEntity>
         get() = _selectedVehicle
@@ -42,7 +39,6 @@ class VehiclesViewModel(
             .subscribe({
                 Timber.d(it.toString(), "List")
                 vehicleList.addAll(it)
-                _closeCars.postValue(it)
                 showLoading.set(View.GONE)
                 notifyChange()
             }, {

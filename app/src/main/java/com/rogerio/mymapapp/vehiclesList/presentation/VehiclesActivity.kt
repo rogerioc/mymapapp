@@ -1,9 +1,11 @@
 package com.rogerio.mymapapp.vehiclesList.presentation
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.rogerio.mymapapp.R
 import kotlinx.android.synthetic.main.vehicles_activity.*
+
 
 class VehiclesActivity : AppCompatActivity() {
 
@@ -18,4 +20,13 @@ class VehiclesActivity : AppCompatActivity() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        val fragment = supportFragmentManager.findFragmentById(R.id.container)
+        fragment?.onActivityResult(requestCode,resultCode, data)
+    }
 }

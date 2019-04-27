@@ -92,6 +92,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-maps:$gms"
     implementation "com.google.android.gms:play-services-location:$locationVersion"
 
+    testImplementation("org.koin:koin-test:$koinVersion")
+
     testImplementation "junit:junit:$junitVersion"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlin"
     testImplementation "androidx.arch.core:core-testing:$lifecycleVersion"
