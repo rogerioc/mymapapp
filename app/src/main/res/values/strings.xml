@@ -3,4 +3,5 @@
     <string name="text_taxi">Taxi</string>
     <string name="text_close_vehicles">Close Vehicles</string>
     <string name="text_permission">Permission was denied</string>
+    <string name="text_button_permission">Permission</string>
 </resources>

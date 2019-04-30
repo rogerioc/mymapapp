@@ -27,7 +27,6 @@ class VehiclesFragment : Fragment() {
 
     companion object {
         fun newInstance() = VehiclesFragment()
-        private const val LOCATION_PERMISSION_REQUEST_CODE = 1
     }
 
     private lateinit var binding: VehiclesFragmentBindingImpl
@@ -60,41 +59,7 @@ class VehiclesFragment : Fragment() {
             intent.putExtra(VEHICLE_DATA, it)
             startActivity(intent)
         })
-    }
-
-    override fun onStart() {
-        super.onStart()
-
-        if (
-            activity?.let {
-                checkSelfPermission(
-                    it,
-                    Manifest.permission.ACCESS_FINE_LOCATION
-                )
-            }
-            != PackageManager.PERMISSION_GRANTED
-        ) {
-            requestPermissions(
-                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                LOCATION_PERMISSION_REQUEST_CODE
-            )
-        } else {
-            viewModel.start()
-        }
-
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK) {
-            if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
-                viewModel.start()
-            }
-        } else {
-            if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
-                Toast.makeText(context, getString(R.string.text_permission), Toast.LENGTH_LONG).show()
-            }
-        }
+        viewModel.start()
     }
 
 }
